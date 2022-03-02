@@ -1,4 +1,7 @@
 {
+  "include": [
+    "./src/**/*"
+  ],
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -7,6 +10,8 @@
       "esnext"
     ],
     "allowJs": true,
+    "checkJs": false,
+    "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -16,11 +21,12 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+    //"isolatedModules": true,
+    "noEmit": false,
+    "outDir": "./public",
+    // Generate source map file to debug ts file.
+    "sourceMap": true,
     "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+  }
+
 }

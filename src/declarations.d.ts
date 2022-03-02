@@ -1,0 +1,1 @@
+declare module '*.css'; //help to solve error regarding "CSS module node found"
